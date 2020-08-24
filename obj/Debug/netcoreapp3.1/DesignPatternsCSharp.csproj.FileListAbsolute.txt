@@ -1,0 +1,13 @@
+C:\Users\yeaskarb\Desktop\MSXI\Learning\DesignPatternsCSharp\bin\Debug\netcoreapp3.1\DesignPatternsCSharp.exe
+C:\Users\yeaskarb\Desktop\MSXI\Learning\DesignPatternsCSharp\bin\Debug\netcoreapp3.1\DesignPatternsCSharp.deps.json
+C:\Users\yeaskarb\Desktop\MSXI\Learning\DesignPatternsCSharp\bin\Debug\netcoreapp3.1\DesignPatternsCSharp.runtimeconfig.json
+C:\Users\yeaskarb\Desktop\MSXI\Learning\DesignPatternsCSharp\bin\Debug\netcoreapp3.1\DesignPatternsCSharp.runtimeconfig.dev.json
+C:\Users\yeaskarb\Desktop\MSXI\Learning\DesignPatternsCSharp\bin\Debug\netcoreapp3.1\DesignPatternsCSharp.dll
+C:\Users\yeaskarb\Desktop\MSXI\Learning\DesignPatternsCSharp\bin\Debug\netcoreapp3.1\DesignPatternsCSharp.pdb
+C:\Users\yeaskarb\Desktop\MSXI\Learning\DesignPatternsCSharp\obj\Debug\netcoreapp3.1\DesignPatternsCSharp.csprojAssemblyReference.cache
+C:\Users\yeaskarb\Desktop\MSXI\Learning\DesignPatternsCSharp\obj\Debug\netcoreapp3.1\DesignPatternsCSharp.AssemblyInfoInputs.cache
+C:\Users\yeaskarb\Desktop\MSXI\Learning\DesignPatternsCSharp\obj\Debug\netcoreapp3.1\DesignPatternsCSharp.AssemblyInfo.cs
+C:\Users\yeaskarb\Desktop\MSXI\Learning\DesignPatternsCSharp\obj\Debug\netcoreapp3.1\DesignPatternsCSharp.csproj.CoreCompileInputs.cache
+C:\Users\yeaskarb\Desktop\MSXI\Learning\DesignPatternsCSharp\obj\Debug\netcoreapp3.1\DesignPatternsCSharp.dll
+C:\Users\yeaskarb\Desktop\MSXI\Learning\DesignPatternsCSharp\obj\Debug\netcoreapp3.1\DesignPatternsCSharp.pdb
+C:\Users\yeaskarb\Desktop\MSXI\Learning\DesignPatternsCSharp\obj\Debug\netcoreapp3.1\DesignPatternsCSharp.genruntimeconfig.cache
