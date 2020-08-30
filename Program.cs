@@ -1,14 +1,20 @@
 ﻿using System;
-using TaxService;
-using OrderNM;
-using InvoiceService;
-using ShippingService;
+using DesignPatternsCSharp.TaxService;
+using DesignPatternsCSharp.OrderNM;
+using DesignPatternsCSharp.InvoiceService;
+using DesignPatternsCSharp.ShippingService;
 
 namespace DesignPatternsCSharp
 {
     class Program
     {
         static void Main(string[] args)
+        {
+            // strategy pattern test
+            StrategyPatternTest();
+        }
+
+        static void StrategyPatternTest()
         {
             IOrder order = new Order
             {
@@ -22,7 +28,6 @@ namespace DesignPatternsCSharp
 
             decimal tax = order.getTax();
             Console.WriteLine(tax);
-
             order.GenerateInvoice();
             order.ShipOrder();
         }

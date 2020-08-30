@@ -1,4 +1,4 @@
-namespace OrderNM
+namespace DesignPatternsCSharp.OrderNM
 {
     public interface IItem
     {

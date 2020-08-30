@@ -1,4 +1,4 @@
-namespace ShippingService
+namespace DesignPatternsCSharp.ShippingService
 {
     public interface IShippingServiceStrategy
     {

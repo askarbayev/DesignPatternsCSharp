@@ -1,6 +1,6 @@
-using OrderNM;
+using DesignPatternsCSharp.OrderNM;
 
-namespace InvoiceService
+namespace DesignPatternsCSharp.InvoiceService
 {
     public abstract class InvoiceServiceStrategy : IInvoiceServiceStrategy
     {

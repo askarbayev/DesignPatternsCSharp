@@ -1,6 +1,6 @@
 using System;
 
-namespace ShippingService
+namespace DesignPatternsCSharp.ShippingService
 {
     public class DhlShippingServiceStrategy : IShippingServiceStrategy
     {

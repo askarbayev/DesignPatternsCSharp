@@ -1,8 +1,8 @@
-using TaxService;
-using InvoiceService;
-using ShippingService;
+using DesignPatternsCSharp.TaxService;
+using DesignPatternsCSharp.InvoiceService;
+using DesignPatternsCSharp.ShippingService;
 
-namespace OrderNM
+namespace DesignPatternsCSharp.OrderNM
 {
     public interface IOrder
     {

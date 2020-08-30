@@ -1,6 +1,6 @@
-using OrderNM;
+using DesignPatternsCSharp.OrderNM;
 
-namespace TaxService
+namespace DesignPatternsCSharp.TaxService
 {
     public class SwedenTaxService : ITaxServiceStrategy
     {

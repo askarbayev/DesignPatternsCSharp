@@ -1,9 +1,9 @@
-using TaxService;
-using InvoiceService;
+using DesignPatternsCSharp.TaxService;
+using DesignPatternsCSharp.InvoiceService;
 using System;
-using ShippingService;
+using DesignPatternsCSharp.ShippingService;
 
-namespace OrderNM
+namespace DesignPatternsCSharp.OrderNM
 {
     public class Order : IOrder
     {

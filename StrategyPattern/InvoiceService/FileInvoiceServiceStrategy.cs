@@ -1,8 +1,8 @@
-using OrderNM;
+using DesignPatternsCSharp.OrderNM;
 using System;
 using System.IO;
 
-namespace InvoiceService
+namespace DesignPatternsCSharp.InvoiceService
 {
     public class FileInvoiceServiceStrategy : InvoiceServiceStrategy
     {
