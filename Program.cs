@@ -5,6 +5,7 @@ using DesignPatternsCSharp.InvoiceService;
 using DesignPatternsCSharp.ShippingService;
 using SingletonPattern;
 using BuilderPattern;
+using PrototypePattern;
 
 namespace DesignPatternsCSharp
 {
@@ -19,7 +20,10 @@ namespace DesignPatternsCSharp
             // SingletonPatternTest();
 
             // builder pattern test
-            BuilderPatternTest();
+            //BuilderPatternTest();
+
+            // prototype pattern
+            PrototypePatternTest();
         }
 
         static void StrategyPatternTest()
@@ -28,7 +32,7 @@ namespace DesignPatternsCSharp
             {
                 origin = "IL",
                 destination = "MA",
-                items = new Item[] { new Item { name = "Phone", value = 800.0m }, new Item { name = "TV", value = 500.0m } },
+                items = new OrderNM.Item[] { new OrderNM.Item { name = "Phone", value = 800.0m }, new OrderNM.Item { name = "TV", value = 500.0m } },
                 taxService = new USTaxService(),
                 invoiceService = new DisplayInvoiceServiceStrategy(),
                 shippingService = new FedExShippingServiceStrategy()
@@ -62,6 +66,18 @@ namespace DesignPatternsCSharp
             Console.WriteLine(lunchOrder.GetBread());
             Console.WriteLine(lunchOrder.GetDressing());
             Console.WriteLine(lunchOrder.GetMeat());
+        }
+
+        static void PrototypePatternTest()
+        {
+            Register register = new Register();
+            Book item = (Book)register.GetItem(ItemType.Book);
+            Console.WriteLine(item.History.text);
+            Book item2 = (Book)item.DeepClone();
+            Console.WriteLine(item2.History.text);
+            item2.History.text = "changed history";
+            Console.WriteLine(item.History.text);
+            Console.WriteLine(item2.History.text);
         }
 
     }
