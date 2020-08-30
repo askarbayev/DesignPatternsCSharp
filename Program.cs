@@ -4,6 +4,7 @@ using DesignPatternsCSharp.OrderNM;
 using DesignPatternsCSharp.InvoiceService;
 using DesignPatternsCSharp.ShippingService;
 using SingletonPattern;
+using BuilderPattern;
 
 namespace DesignPatternsCSharp
 {
@@ -15,7 +16,10 @@ namespace DesignPatternsCSharp
             //StrategyPatternTest();
 
             // singleton pattern test
-            SingletonPatternTest();
+            // SingletonPatternTest();
+
+            // builder pattern test
+            BuilderPatternTest();
         }
 
         static void StrategyPatternTest()
@@ -48,6 +52,16 @@ namespace DesignPatternsCSharp
             LoggerSingleton instanceSecond = LoggerSingleton.getInstance();
             instanceSecond.Write("Second Instance Sample");
             instanceSecond.Log();
+        }
+
+        static void BuilderPatternTest()
+        {
+            LunchOrder.Builder builder = new LunchOrder.Builder();
+            builder.AddBread("Taba Nan").AddDressing("Some Dressing").AddMeat("Hourse Meat");
+            LunchOrder lunchOrder = new LunchOrder(builder);
+            Console.WriteLine(lunchOrder.GetBread());
+            Console.WriteLine(lunchOrder.GetDressing());
+            Console.WriteLine(lunchOrder.GetMeat());
         }
 
     }
