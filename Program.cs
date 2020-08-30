@@ -3,6 +3,7 @@ using DesignPatternsCSharp.TaxService;
 using DesignPatternsCSharp.OrderNM;
 using DesignPatternsCSharp.InvoiceService;
 using DesignPatternsCSharp.ShippingService;
+using SingletonPattern;
 
 namespace DesignPatternsCSharp
 {
@@ -11,7 +12,10 @@ namespace DesignPatternsCSharp
         static void Main(string[] args)
         {
             // strategy pattern test
-            StrategyPatternTest();
+            //StrategyPatternTest();
+
+            // singleton pattern test
+            SingletonPatternTest();
         }
 
         static void StrategyPatternTest()
@@ -30,6 +34,20 @@ namespace DesignPatternsCSharp
             Console.WriteLine(tax);
             order.GenerateInvoice();
             order.ShipOrder();
+        }
+
+        static void SingletonPatternTest()
+        {
+            LoggerSingleton instance = LoggerSingleton.getInstance();
+            instance.Write("Fist Instance Sample");
+            instance.Log();
+            instance.Write("Fist Instance Sample");
+            instance.Write("Fist Instance Sample");
+            instance.Log();
+
+            LoggerSingleton instanceSecond = LoggerSingleton.getInstance();
+            instanceSecond.Write("Second Instance Sample");
+            instanceSecond.Log();
         }
 
     }
