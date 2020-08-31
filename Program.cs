@@ -7,6 +7,7 @@ using SingletonPattern;
 using BuilderPattern;
 using PrototypePattern;
 using FactoryPattern;
+using AbstractFactoryPattern;
 
 namespace DesignPatternsCSharp
 {
@@ -27,7 +28,10 @@ namespace DesignPatternsCSharp
             // PrototypePatternTest();
 
             // factory pattern test
-            FactoryPatternTest();
+            //FactoryPatternTest();
+
+            // abstract factory pattern test
+            AbstractFactoryPatternTest();
         }
 
         static void StrategyPatternTest()
@@ -90,6 +94,17 @@ namespace DesignPatternsCSharp
             Console.WriteLine(blog.GetPages().Count);
             Shop shop = (Shop)WebsiteFactory.GetWebsite(WebsiteType.SHOP);
             Console.WriteLine(shop.GetPages().Count);
+        }
+
+        static void AbstractFactoryPatternTest()
+        {
+            CreditCardFactory abstractFactory = CreditCardFactory.GetCreditCardFactory(600);
+            CreditCard creditCard = abstractFactory.GetCreditCard(CardType.GOLD);
+            Console.WriteLine(creditCard.GetType());
+
+            abstractFactory = CreditCardFactory.GetCreditCardFactory(700);
+            creditCard = abstractFactory.GetCreditCard(CardType.PLATINUM);
+            Console.WriteLine(creditCard.GetType());
         }
 
     }
