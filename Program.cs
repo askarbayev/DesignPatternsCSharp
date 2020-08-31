@@ -6,6 +6,7 @@ using DesignPatternsCSharp.ShippingService;
 using SingletonPattern;
 using BuilderPattern;
 using PrototypePattern;
+using FactoryPattern;
 
 namespace DesignPatternsCSharp
 {
@@ -22,8 +23,11 @@ namespace DesignPatternsCSharp
             // builder pattern test
             //BuilderPatternTest();
 
-            // prototype pattern
-            PrototypePatternTest();
+            // prototype pattern test
+            // PrototypePatternTest();
+
+            // factory pattern test
+            FactoryPatternTest();
         }
 
         static void StrategyPatternTest()
@@ -78,6 +82,14 @@ namespace DesignPatternsCSharp
             item2.History.text = "changed history";
             Console.WriteLine(item.History.text);
             Console.WriteLine(item2.History.text);
+        }
+
+        static void FactoryPatternTest()
+        {
+            Blog blog = (Blog)WebsiteFactory.GetWebsite(WebsiteType.BLOG);
+            Console.WriteLine(blog.GetPages().Count);
+            Shop shop = (Shop)WebsiteFactory.GetWebsite(WebsiteType.SHOP);
+            Console.WriteLine(shop.GetPages().Count);
         }
 
     }
